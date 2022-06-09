@@ -5,7 +5,7 @@ pipeline{
         stage ('Docker Build'){
             agent any
             steps {
-                sh 'docker build -t nkduy/simple-app'
+                sh 'docker build -t nkduy/simple-app .'
             }
         }
     }
