@@ -1,9 +1,9 @@
 #!groovy
 pipeline{
     agent none
-    stages('Docker Build'){
+    stages ('Docker Build'){
         agent any
-        steps{
+        steps {
             sh 'docker build -t nkduy/simple-app'
         }
     }
